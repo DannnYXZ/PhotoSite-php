@@ -1,0 +1,96 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+.media-topics-wrapper {
+    height: 100%;
+    display: flex;
+    background: black;
+}
+.media-div {
+    opacity: 0.3;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: opacity 0.5s;
+}
+.media-div:hover {
+    opacity: 1;
+}
+.wedding {
+    background-image: url(../img/wedding.jpg);
+}
+.food {
+    background-image: url(../img/food.jpg);
+}
+.session {
+    background-image: url(../img/session.jpg);
+}
+.tourism {
+    background-image: url(../img/tourism.jpg);
+}
+.media-div img {
+    object-fit: cover;
+    width: 100%;
+}
+.media-div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.topic-captions-panel {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    width: 100vw;
+    height: 8vw;
+    pointer-events: none;
+}
+.topic-caption {
+    z-index: 1;
+    width: 25%;
+    float: left;
+    font-family: 'Circularpro', sans-serif;
+    color: #fff;
+    font-size: 2.6vw;
+    text-align: center;
+    text-decoration: none;
+}
+.topic-caption-sub {
+    display: block;
+    font-family: 'Circularpro book', sans-serif;
+    color: #fff;
+    font-size: 0.8vw;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.media-div .topic-caption {
+    opacity: 0;
+}
+@media (max-width: 990px){
+    .media-topics-wrapper {
+        height: unset;
+        flex-direction: column;
+    }
+    .media-div {
+        opacity: 1;
+        height: 80vw;
+    }
+    .topic-captions-panel {
+        display: none;
+    }
+    .media-div .topic-caption {
+        opacity: 1;
+        position: relative;
+        top: 45%;
+        width: 100%;
+        font-size: 7vw;
+    }
+    .media-div .topic-caption-sub {
+        font-size: 2vw;
+    }
+}
