@@ -3,8 +3,8 @@
 
 <head>
     <script src="js/jquery.js"></script>
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/fill-gallery.js"></script>
+    <link rel="stylesheet" href="css/gallery.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/topnav.css" />
     <link rel="stylesheet" href="css/sidenav.css" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/sticky-footer.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <title>Gallery</title>
     <meta charset="UTF-8" />
 </head>
 
@@ -52,37 +53,28 @@
                 </li>
             </ul>
         </nav>
-        <main class="card">
-            <div class="column">
-                <h3>Contact</h3>
-                <p>If you want to cooperate with me, or if you don't have a photographer, feel free to contact me...</p>
-                <p><strong></strong>Email</strong><br><a href="mailto:#" title="">shunticov@gmail.com</a></p>
-                <p><b>Tel.</b><br>+375296312269 vel<br>+375292409167 mts</p>
-                <p><strong>Shunticov Sergey<br> Photography</strong><br> Mogilev, Belarus<br><br></p>
-            </div>
-            <div class="column contact-form">
-                <h3>Keep In Touch!</h3>
-                <section class="inputs">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit" formmethod="post">SEND</button>
-                </section>
-            </div>
+        <main class="gallery">
+            <div class="gallery-col"></div>
+            <div class="gallery-col"></div>
+            <div class="gallery-col"></div>
+            <div class="gallery-col"></div>
+            <div class="gallery-col"></div>
         </main>
-    </div>
-    <footer>
-        <div class="content">
-            <div class="socials-block">
-                <span class="caption">Follow Me!</span>
-                <div class="socials">
-                    <a class="social instagram" href="https://www.instagram.com/shuntikov/"></a>
-                    <a class="social vk" href="https://vk.com/shuntikov_foto"></a>
+        <footer>
+            <div class="content">
+                <div class="socials-block">
+                    <span class="caption">Follow Me!</span>
+                    <div class="socials">
+                        <a class="social instagram" href="https://www.instagram.com/shuntikov/"></a>
+                        <a class="social vk" href="https://vk.com/shuntikov_foto"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
+    </div>
     </footer>
+    <script>
+        fill_gallery("../img/wedding", 25);
+    </script>
     <script src="js/explore.js"></script>
     <script src="js/menu.js"></script>
 </body>

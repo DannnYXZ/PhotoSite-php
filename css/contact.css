@@ -1,24 +1,25 @@
 html {
     cursor: url(../img/circle-cursor.png), auto;
 }
-body {
+.body-content {
     background-image: linear-gradient(#8D44AD, #C1392B);
 }
-
-
+.card-container {
+    flex: 1;
+}
 .card {
     border-radius: 20px;
     color: white;
     text-shadow: -1px 6px 30px rgba(0, 0, 0, 0.75);
     font-family: Copperplate, Copperplate Gothic Light, fantasy; 
     display: flex;
-    margin: 0 20vw 10vw 20vw;
-
+    margin: 10vw 20vw;
     padding: 2vw;
     background-color: rgba(255, 251, 0, 0);
     box-shadow: 1.5rem 2.5rem 5rem 0.9rem rgba(0,0,0,.13);
 }
 .column {
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
 }
@@ -29,9 +30,6 @@ a {
 .column:first-child {
     margin-right: 4vw; 
     width: 60%;
-}
-.topnav {
-    margin-bottom: 5vw;
 }
 .inputs {
     display: block;

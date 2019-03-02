@@ -1,4 +1,4 @@
-const max_ang = 30;
+const max_ang = 40;
 const PERSP = "perspective(1500px) ";
 const DEF_ROT = "rotateX(0deg) rotateY(0deg) ";
 const SCALE = "scale3d(1,1,1) ";
