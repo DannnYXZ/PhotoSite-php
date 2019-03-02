@@ -1,0 +1,27 @@
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: -1px 6px 30px rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(to right,#8D44AD, #C1392B);
+}
+.topnav h1 {
+    font-weight: normal;
+    display: none;
+    font-size: 4vw;
+}
+@media screen and (max-width: 640px){
+    .topnav {
+        padding-left: 7%;
+        height: 7.4vw;
+        background-color: #373C3F;
+        color: #FFFFFF;
+    }
+    .topnav .nav-btns {
+        display: none;
+    }
+    .topnav h1 {
+        display: inline;
+    }
+}

@@ -1,0 +1,28 @@
+html {
+    cursor: url(../img/circle-cursor.png), auto;
+}
+.gallery {
+    display: flex;
+}
+.gallery-col {
+    background-size: cover;
+    width: 100%;
+    margin: 0 0.3vw;
+}
+.gallery-pic {
+    display: block;
+    cursor: url(../img/circle-cursor.png), auto;
+    transition: all 800ms cubic-bezier(0.03, 0.98, 0.52, 1) 0s;
+}
+.gallery-pic img {
+    display: block;
+    pointer-events: none;
+    margin: 0.6vw 0;
+    width: 100%;
+}
+.topnav {
+    margin: 0 0.3vw;
+}
+footer {
+    margin: 0 0.3vw;
+}

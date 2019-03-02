@@ -1,0 +1,53 @@
+html,
+body {
+    height: 100%;
+}
+footer {
+    font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+    color: white;
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,#8D44AD, #C1392B);
+
+    position: relative;
+    bottom: 0;
+}
+footer .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.socials-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 0;
+    margin-right: 30px;
+}
+.socials {
+    display: block;
+}
+.caption {
+    padding-right: 1vw;
+    font-size: 1.7vw;
+}
+.social {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    background: url(../img/spline.png) -138px 0;
+}
+.social:hover {
+    transition: all 800ms ease-in-out;
+    transform: scale(1.1) ;
+    filter: grayscale(0%);
+}
+.vk {
+    background-position: -228px 0;
+}
+.instagram {
+    background-position: -273px 0;
+}

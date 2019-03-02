@@ -1,0 +1,22 @@
+.sidenav {
+    display: flex;
+    width: 0;
+    position: fixed;
+    flex-direction: column;
+    z-index: 1;
+    margin: 8px;
+    top: 7.45vw;
+    right: 0;
+    background-image: linear-gradient(#8D44AD, #C1392B);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sidenav .nav-btns{
+    flex-direction: column;
+}
+.sidenav li {
+    flex-direction: column;
+}
+.sidenav a {
+    justify-content: center;
+}
