@@ -3,53 +3,13 @@
 
 <head>
     <title>Topics</title>
-    <link rel="stylesheet" href="css/topics.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/topnav.css" />
-    <link rel="stylesheet" href="css/sidenav.css" />
-    <link rel="stylesheet" href="css/nav-btn.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <?php include 'css-imports/topics.php';?>
     <meta charset="UTF-8" />
 </head>
 
 <body>
-    <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
-        <i class="fas fa-bars"></i>
-    </nav>
-    <nav class="topnav">
-        <ul class="nav-btns">
-            <li>
-                <a href="gallery.html">GALLERY</a>
-            </li>
-            <li>
-                <a href="topics.html#topics">TOPICS</a>
-            </li>
-            <li>
-                <a href="about.html">ABOUT ME</a>
-            </li>
-            <li>
-                <a href="contact.html">CONTACT</a>
-            </li>
-        </ul>
-    </nav>
-    <nav class="sidenav" id="side-nav">
-        <ul class="nav-btns">
-            <li>
-                <a href="gallery.html">GALLERY</a>
-            </li>
-            <li>
-                <a href="topics.html#topics">TOPICS</a>
-            </li>
-            <li>
-                <a href="about.html">ABOUT ME</a>
-            </li>
-            <li>
-                <a href="contact.html">CONTACT</a>
-            </li>
-        </ul>
-    </nav>
+    <?php include 'elements/topnav.html';?>
+    <?php include 'elements/sidenav.html';?>
     <section class="media-topics-wrapper" id="topics">
         <div class="media-div wedding">
             <a href="wedding.html">
@@ -102,17 +62,7 @@
             <span class="topic-caption-sub">Explore The World</span>
         </span>
     </section>
-    <footer>
-        <div class="content">
-            <div class="socials-block">
-                <span class="caption">Follow Me!</span>
-                <div class="socials">
-                    <a class="social instagram" href="https://www.instagram.com/shuntikov/"></a>
-                    <a class="social vk" href="https://vk.com/shuntikov_foto"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'elements/footer.html';?>
     <script src="js/menu.js"></script>
 </body>
 
