@@ -1,6 +1,12 @@
 <?
 class Controller_Gallery extends Controller{	
-    static function generate_gallery($img_src, $img_cnt){
+
+    function __construct(){
+		$this->model = new Model_Gallery();
+		$this->view = new View();
+    }
+    
+    function generate_gallery($img_src, $img_cnt){
         $view = new View();
         $view->set('TPL_PATH', 'application/views/');
         $view->set('title', 'Gallery');
@@ -19,29 +25,28 @@ class Controller_Gallery extends Controller{
             'fill-gallery.js'
         ));
         $view->set('content', 'gallery.php');
-        $view->set('run_scripts', array(
-            'fill_gallery("'.$img_src.'", '.$img_cnt.');',
-        ));
+        $img_list = $this->model->list_files($img_src);
+        $view->set('img_list', $img_list);
         $view->set('foot_scripts', array(
             'explore.js',
             'menu.js'
         ));
-        return $view->generate('template');
+        return $view->generate('template', md5($_SERVER['REQUEST_URI']));
     }
     function action_index(){
-        echo Controller_Gallery::generate_gallery('/img/gallery-all', 25);
+        echo Controller_Gallery::generate_gallery('img/gallery-all', 25);
     }
     function action_wedding(){
-        echo Controller_Gallery::generate_gallery('/img/wedding', 30);
+        echo Controller_Gallery::generate_gallery('img/wedding', 30);
     }
     function action_food(){
-        echo Controller_Gallery::generate_gallery('/img/food', 4);
+        echo Controller_Gallery::generate_gallery('img/food', 4);
     }
     function action_session(){
-        echo Controller_Gallery::generate_gallery('/img/sessions', 32);
+        echo Controller_Gallery::generate_gallery('img/sessions', 32);
     }
     function action_tourism(){
-        echo Controller_Gallery::generate_gallery('/img/tourism', 0);
+        //echo Controller_Gallery::generate_gallery('img/tourism', 0);
     }
 }
 ?>

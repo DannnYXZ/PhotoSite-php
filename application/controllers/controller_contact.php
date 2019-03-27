@@ -21,7 +21,7 @@ class Controller_Contact extends Controller{
             'explore.js',
             'menu.js'
         ));
-        echo $this->view->generate('template');
+        echo $this->view->generate('template', md5($_SERVER['REQUEST_URI']));
 	}
 }
 ?>

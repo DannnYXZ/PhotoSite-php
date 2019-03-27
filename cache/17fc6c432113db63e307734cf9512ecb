@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Topics</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/topics.css">    <link rel="stylesheet" href="/css/footer.css">    <link rel="stylesheet" href="/css/topnav.css">    <link rel="stylesheet" href="/css/sidenav.css">    <link rel="stylesheet" href="/css/nav-btn.css">    <link rel="stylesheet" href="/css/menu.css">    <link rel="stylesheet" href="/css/sticky-footer.css">    <link rel="stylesheet" href="/css/fontawesome/css/all.css"></head>
+
+<body>
+    <nav class="topnav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+</ul></nav>    <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
+    <i class="fas fa-bars"></i>
+</nav>
+<nav class="sidenav" id="side-nav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+</ul></nav>    <section class="media-topics-wrapper" id="topics">
+                    <div class="media-div wedding">
+                <a href="gallery/wedding">
+                    <span class="topic-caption">
+                        Wedding<br />
+                        <span class="topic-caption-sub">Brand New Look</span>
+                    </span>
+                </a>
+            </div>
+                    <div class="media-div food">
+                <a href="gallery/food">
+                    <span class="topic-caption">
+                        Food<br />
+                        <span class="topic-caption-sub">Yummy Tasty Delicious</span>
+                    </span>
+                </a>
+            </div>
+                    <div class="media-div session">
+                <a href="gallery/session">
+                    <span class="topic-caption">
+                        Photosessions<br />
+                        <span class="topic-caption-sub">You Are a Star</span>
+                    </span>
+                </a>
+            </div>
+                    <div class="media-div tourism">
+                <a href="gallery/tourism">
+                    <span class="topic-caption">
+                        Tourism<br />
+                        <span class="topic-caption-sub">Explore The World</span>
+                    </span>
+                </a>
+            </div>
+            </section>
+    <section class="topic-captions-panel">
+                    <span class="topic-caption">
+                Wedding<br />
+                <span class="topic-caption-sub">Brand New Look</span>
+            </span>
+                    <span class="topic-caption">
+                Food<br />
+                <span class="topic-caption-sub">Yummy Tasty Delicious</span>
+            </span>
+                    <span class="topic-caption">
+                Photosessions<br />
+                <span class="topic-caption-sub">You Are a Star</span>
+            </span>
+                    <span class="topic-caption">
+                Tourism<br />
+                <span class="topic-caption-sub">Explore The World</span>
+            </span>
+            </section>
+    <footer>
+    <div class="content">
+        <div class="socials-block">
+            <span class="caption">Follow Me!</span>
+            <div class="socials">
+                <a class="social instagram" href="https://www.instagram.com/shuntikov/"></a>
+                <a class="social vk" href="https://vk.com/shuntikov_foto"></a>
+            </div>
+        </div>
+    </div>
+</footer>        <script src="/js/explore.js"></script>    <script src="/js/menu.js"></script></body>
+
+</html>

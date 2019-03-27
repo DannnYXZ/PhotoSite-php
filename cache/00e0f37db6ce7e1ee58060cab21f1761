@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/gallery.css">    <link rel="stylesheet" href="/css/footer.css">    <link rel="stylesheet" href="/css/topnav.css">    <link rel="stylesheet" href="/css/sidenav.css">    <link rel="stylesheet" href="/css/nav-btn.css">    <link rel="stylesheet" href="/css/menu.css">    <link rel="stylesheet" href="/css/sticky-footer.css">    <link rel="stylesheet" href="/css/fontawesome/css/all.css">        <script src="/js/jquery.js"></script>    <script src="/js/fill-gallery.js"></script>
+</head>
+
+<body>
+    <div class="body-content">
+        <nav class="topnav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+</ul></nav>        <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
+    <i class="fas fa-bars"></i>
+</nav>
+<nav class="sidenav" id="side-nav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+</ul></nav>        <main class="gallery">
+            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-1.jpg>                    <img src=/img/food/img-1.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-2.jpg>                    <img src=/img/food/img-2.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-3.jpg>                    <img src=/img/food/img-3.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-4.jpg>                    <img src=/img/food/img-4.jpg>                </a>                    </div>    </main>    
+    </div>
+    <footer>
+    <div class="content">
+        <div class="socials-block">
+            <span class="caption">Follow Me!</span>
+            <div class="socials">
+                <a class="social instagram" href="https://www.instagram.com/shuntikov/"></a>
+                <a class="social vk" href="https://vk.com/shuntikov_foto"></a>
+            </div>
+        </div>
+    </div>
+</footer>        <script src="/js/explore.js"></script>    <script src="/js/menu.js"></script></body>
+
+</html>
