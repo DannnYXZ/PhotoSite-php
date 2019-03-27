@@ -2,5 +2,5 @@
     <i class="fas fa-bars"></i>
 </nav>
 <nav class="sidenav" id="side-nav">
-    <?=$nav_btns?>
+    <? include($TPL_PATH.'nav_btns.php') ?>
 </nav>
