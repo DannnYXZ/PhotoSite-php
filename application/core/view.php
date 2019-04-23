@@ -20,7 +20,6 @@ class View
 	function generate($template_view, $cache_id){
 		$cache_file = 'cache/'.$cache_id;
 		if(CACHING && file_exists($cache_file)){
-			//echo 'cached';
 			if ((time() - CACHE_TIME) < filemtime($cache_file))
 				return file_get_contents($cache_file);
 		}

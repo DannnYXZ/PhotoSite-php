@@ -24,7 +24,15 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
-</ul></nav>        <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul>            <div class="user-info">
+            admin            <a href="/auth/logout">
+                <button class="button">LOGOUT</button>
+            </a>
+        </div>
+    </nav>        <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
     <i class="fas fa-bars"></i>
 </nav>
 <nav class="sidenav" id="side-nav">
@@ -41,7 +49,10 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
-</ul></nav>        <main class="card">
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul></nav>        <main class="card">
     <div class="column">
         <h3>Contact</h3>
         <p>If you want to cooperate with me, or if you don't have a photographer, feel free to contact me...</p>
@@ -70,6 +81,6 @@
             </div>
         </div>
     </div>
-</footer>        <script src="/js/explore.js"></script>    <script src="/js/menu.js"></script></body>
+</footer>                <script src="/js/explore.js"></script>            <script src="/js/menu.js"></script>    </body>
 
 </html>

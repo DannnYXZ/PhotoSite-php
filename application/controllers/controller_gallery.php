@@ -6,7 +6,7 @@ class Controller_Gallery extends Controller{
 		$this->view = new View();
     }
     
-    function generate_gallery($img_src, $img_cnt){
+    function generate_gallery($img_src){
         $view = new View();
         $view->set('TPL_PATH', 'application/views/');
         $view->set('title', 'Gallery');
@@ -34,16 +34,16 @@ class Controller_Gallery extends Controller{
         return $view->generate('template', md5($_SERVER['REQUEST_URI']));
     }
     function action_index(){
-        echo Controller_Gallery::generate_gallery('img/gallery-all', 25);
+        echo Controller_Gallery::generate_gallery('img/gallery-all');
     }
     function action_wedding(){
-        echo Controller_Gallery::generate_gallery('img/wedding', 30);
+        echo Controller_Gallery::generate_gallery('img/wedding');
     }
     function action_food(){
-        echo Controller_Gallery::generate_gallery('img/food', 4);
+        echo Controller_Gallery::generate_gallery('img/food');
     }
     function action_session(){
-        echo Controller_Gallery::generate_gallery('img/sessions', 32);
+        echo Controller_Gallery::generate_gallery('img/sessions');
     }
     function action_tourism(){
         //echo Controller_Gallery::generate_gallery('img/tourism', 0);

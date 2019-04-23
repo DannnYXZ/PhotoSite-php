@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/gallery.css">    <link rel="stylesheet" href="/css/footer.css">    <link rel="stylesheet" href="/css/topnav.css">    <link rel="stylesheet" href="/css/sidenav.css">    <link rel="stylesheet" href="/css/nav-btn.css">    <link rel="stylesheet" href="/css/menu.css">    <link rel="stylesheet" href="/css/sticky-footer.css">    <link rel="stylesheet" href="/css/fontawesome/css/all.css">        <script src="/js/jquery.js"></script>    <script src="/js/fill-gallery.js"></script>
+</head>
+
+<body>
+    <div class="body-content">
+        <nav class="topnav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul>            <div class="user-info">
+            admin            <a href="/auth/logout">
+                <button class="button">LOGOUT</button>
+            </a>
+        </div>
+    </nav>        <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
+    <i class="fas fa-bars"></i>
+</nav>
+<nav class="sidenav" id="side-nav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul></nav>        <main class="gallery">
+            <div class="gallery-col">                            <a class="gallery-pic" href=img/sessions/img-1.jpg>                    <img src=/img/sessions/img-1.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-13.jpg>                    <img src=/img/sessions/img-13.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-17.jpg>                    <img src=/img/sessions/img-17.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-20.jpg>                    <img src=/img/sessions/img-20.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-24.jpg>                    <img src=/img/sessions/img-24.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-28.jpg>                    <img src=/img/sessions/img-28.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-31.jpg>                    <img src=/img/sessions/img-31.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-6.jpg>                    <img src=/img/sessions/img-6.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/sessions/img-10.jpg>                    <img src=/img/sessions/img-10.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-14.jpg>                    <img src=/img/sessions/img-14.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-18.jpg>                    <img src=/img/sessions/img-18.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-21.jpg>                    <img src=/img/sessions/img-21.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-25.jpg>                    <img src=/img/sessions/img-25.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-29.jpg>                    <img src=/img/sessions/img-29.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-32.jpg>                    <img src=/img/sessions/img-32.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-7.jpg>                    <img src=/img/sessions/img-7.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/sessions/img-11.jpg>                    <img src=/img/sessions/img-11.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-15.jpg>                    <img src=/img/sessions/img-15.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-19.jpg>                    <img src=/img/sessions/img-19.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-22.jpg>                    <img src=/img/sessions/img-22.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-26.jpg>                    <img src=/img/sessions/img-26.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-3.jpg>                    <img src=/img/sessions/img-3.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-4.jpg>                    <img src=/img/sessions/img-4.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-8.jpg>                    <img src=/img/sessions/img-8.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/sessions/img-12.jpg>                    <img src=/img/sessions/img-12.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-16.jpg>                    <img src=/img/sessions/img-16.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-2.jpg>                    <img src=/img/sessions/img-2.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-23.jpg>                    <img src=/img/sessions/img-23.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-27.jpg>                    <img src=/img/sessions/img-27.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-30.jpg>                    <img src=/img/sessions/img-30.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-5.jpg>                    <img src=/img/sessions/img-5.jpg>                </a>                            <a class="gallery-pic" href=img/sessions/img-9.jpg>                    <img src=/img/sessions/img-9.jpg>                </a>                    </div>    </main>    
+    </div>
+    <footer>
+    <div class="content">
+        <div class="socials-block">
+            <span class="caption">Follow Me!</span>
+            <div class="socials">
+                <a class="social instagram" href="https://www.instagram.com/shuntikov/"></a>
+                <a class="social vk" href="https://vk.com/shuntikov_foto"></a>
+            </div>
+        </div>
+    </div>
+</footer>                <script src="/js/explore.js"></script>            <script src="/js/menu.js"></script>    </body>
+
+</html>

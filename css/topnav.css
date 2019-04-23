@@ -1,19 +1,41 @@
 .topnav {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     color: #FFFFFF;
     text-shadow: -1px 6px 30px rgba(0, 0, 0, 0.75);
     background-image: linear-gradient(to right,#8D44AD, #C1392B);
+    padding-right: 3vw;
 }
 .topnav h1 {
     font-weight: normal;
     display: none;
     font-size: 4vw;
 }
+.user-info {
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.button {
+    border-width: 1;
+    border-style: dotted;
+    background: transparent;    
+    font-size: 1.3vw;
+    border-radius: 1vw;
+    color: white;
+    transition: all 0.5s;
+}
+.button:hover {
+    box-shadow: inset 0 -0.3vw 0 0 cyan;
+    background-color: #26a6d85f;
+}
 @media screen and (max-width: 640px){
     .topnav {
-        padding-left: 7%;
+        padding-left: 3vw;
         height: 7.4vw;
         background-color: #373C3F;
         color: #FFFFFF;
@@ -23,5 +45,8 @@
     }
     .topnav h1 {
         display: inline;
+    }
+    .user-info {
+        align-items: flex-start;
     }
 }

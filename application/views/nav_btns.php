@@ -11,4 +11,13 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
+    <? if(!defined('USER_NAME')) :?>
+        <li>
+            <a href="/login">LOGIN</a>
+        </li>
+    <? elseif(USER_NAME == 'admin'): ?>
+        <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    <? endif ?>
 </ul>

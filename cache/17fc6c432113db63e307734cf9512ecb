@@ -22,7 +22,15 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
-</ul></nav>    <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul>            <div class="user-info">
+            admin            <a href="/auth/logout">
+                <button class="button">LOGOUT</button>
+            </a>
+        </div>
+    </nav>    <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
     <i class="fas fa-bars"></i>
 </nav>
 <nav class="sidenav" id="side-nav">
@@ -39,7 +47,10 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
-</ul></nav>    <section class="media-topics-wrapper" id="topics">
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul></nav>    <section class="media-topics-wrapper" id="topics">
                     <div class="media-div wedding">
                 <a href="gallery/wedding">
                     <span class="topic-caption">
@@ -101,6 +112,6 @@
             </div>
         </div>
     </div>
-</footer>        <script src="/js/explore.js"></script>    <script src="/js/menu.js"></script></body>
+</footer>                <script src="/js/explore.js"></script>            <script src="/js/menu.js"></script>    </body>
 
 </html>

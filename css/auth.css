@@ -1,0 +1,76 @@
+html {
+    cursor: url(../img/circle-cursor.png), auto;
+}
+.body-content {
+    background-image: linear-gradient(#8D44AD, #C1392B);
+}
+.card-container {
+    flex: 1;
+}
+.card {
+    border-radius: 20px;
+    color: white;
+    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.55);
+    font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw 23vw;
+    padding: 2vw;
+    background-color: rgba(255, 251, 0, 0);
+    box-shadow: 1.5rem 2.5rem 5rem 0.9rem rgba(0,0,0,.13);
+}
+a {
+    color: rgba(255, 255, 255, 0.603);
+    text-decoration: none;
+}
+.column:first-child {
+    margin-right: 4vw; 
+    width: 60%;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 1.5vw;
+}
+
+.inputs *{
+    font-size: 1.5vw;
+    box-shadow: -10px 10px 20px 1px rgba(0,0,0,.13);
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    padding: 1vw;
+    height: 4vw;;
+    margin-bottom: 1vw;
+}
+.inputs *:focus {   
+    box-shadow: none;
+}
+.inputs *:hover {
+    box-shadow: none;
+}
+.inputs textarea {
+    height: 8vw;
+}
+.inputs button {
+    background: 0 0;
+    color: rgba(255, 255, 255, 1);
+}
+.notify,
+.reg-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+}
+.notify {
+    font-size: 2vw;
+    border: 1px solid rgb(255, 230, 0);
+    color: rgb(255, 230, 0);
+}
+.reg-btn {
+    border: 1px solid yellow;
+    color: yellow;
+}
