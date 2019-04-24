@@ -13,7 +13,7 @@ class Controller_Auth extends Controller
         Auth::login($login, $password);
     }
     
-    public function action_logout(){
+    public function action_logout() {
         Auth::logout();
     }
 }

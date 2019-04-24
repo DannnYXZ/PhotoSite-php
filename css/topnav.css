@@ -47,6 +47,6 @@
         display: inline;
     }
     .user-info {
-        align-items: flex-start;
+        align-items: center;
     }
 }

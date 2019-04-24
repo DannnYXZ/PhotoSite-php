@@ -15,7 +15,7 @@
         <li>
             <a href="/login">LOGIN</a>
         </li>
-    <? elseif(USER_NAME == 'admin'): ?>
+    <? elseif(USER_NAME == ADMIN_NAME): ?>
         <li>
             <a href="/editor">EDITOR</a>
         </li>

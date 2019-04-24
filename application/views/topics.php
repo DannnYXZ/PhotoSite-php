@@ -13,10 +13,10 @@
     <? include($TPL_PATH.'sidenav.php') ?>
     <section class="media-topics-wrapper" id="topics">
         <? foreach($media_divs as $media_div): ?>
-            <div class="media-div <?=$media_div['subclass']?>">
-                <a href="gallery/<?=$media_div['subclass']?>">
+            <div class="media-div <?=$media_div['gallery_ref']?>">
+                <a href="gallery/<?=$media_div['gallery_ref']?>">
                     <span class="topic-caption">
-                        <?=$media_div['topic_name']?><br />
+                        <?=$media_div['topic_name']?><br/>
                         <span class="topic-caption-sub"><?=$media_div['topic_caption']?></span>
                     </span>
                 </a>

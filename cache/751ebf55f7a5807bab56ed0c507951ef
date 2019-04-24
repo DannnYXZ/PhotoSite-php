@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/editor.css">    <link rel="stylesheet" href="/css/footer.css">    <link rel="stylesheet" href="/css/topnav.css">    <link rel="stylesheet" href="/css/sidenav.css">    <link rel="stylesheet" href="/css/nav-btn.css">    <link rel="stylesheet" href="/css/menu.css">    <link rel="stylesheet" href="/css/sticky-footer.css">    <link rel="stylesheet" href="/css/fontawesome/css/all.css">        <script src="/js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="body-content">
+        <nav class="topnav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul>            <div class="user-info">
+            admin            <a href="/auth/logout">
+                <button class="button">LOGOUT</button>
+            </a>
+        </div>
+    </nav>        <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
+    <i class="fas fa-bars"></i>
+</nav>
+<nav class="sidenav" id="side-nav">
+    <ul class="nav-btns">
+    <li>
+        <a href="/gallery">GALLERY</a>
+    </li>
+    <li>
+        <a href="/topics#topics">TOPICS</a>
+    </li>
+    <li>
+        <a href="/about">ABOUT ME</a>
+    </li>
+    <li>
+        <a href="/contact">CONTACT</a>
+    </li>
+            <li>
+            <a href="/editor">EDITOR</a>
+        </li>
+    </ul></nav>        <div class="editor">
+    <nav class="side-panel">
+        <a class="side-panel__link" href="editor/topics">
+            <div class="side-panel__tab">
+                <span class="side-panel__tab-name">Topics</span>
+            </div>
+        </a>
+    </nav>
+    <section class="main-panel">
+                    <h1>Topics</h1>
+            <hr>
+            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data">
+                <h3>Wedding</h3>
+                <span> Preview: icon.jpg</span> <input type="file" value="/wedding"> </br>
+                <span> Source dir: </span> <input type="text" name="source-dir" value="/wedding"> </br>
+                <span> Tick images to be removed: </span> <br>
+                <ul class="files">
+                    <li><input name="file_name1" type="checkbox">f1 </li>
+                    <li><input name="file_name2" type="checkbox">f2</li>
+                    <li><input name="delete_file[]" type="checkbox">KEK </li>
+                    <li><input name="delete_file4" type="checkbox">KEK </li>
+                    <li><input name="delete_file5" type="checkbox">KEK </li>
+                    <li><input name="delete_file6" type="checkbox">KEK </li>
+                    <li><input name="delete_file7" type="checkbox">KEK </li>
+                    <li><input name="delete_file8" type="checkbox">KEK </li>
+                    <li><input name="delete_file9" type="checkbox">KEK </li>
+                    <li><input name="delete_file0" type="checkbox">KEK </li>
+                </ul>
+                <span> Add images: </span> <input type="file" name="add_files[]" multiple>
+                <input type="submit" value="Apply">
+            </form>
+                        
+            <br />
+<b>Notice</b>:  Undefined variable: topics in <b>D:\DannnY-CODE\WEB\wfolio\application\views\editor.php</b> on line <b>34</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>D:\DannnY-CODE\WEB\wfolio\application\views\editor.php</b> on line <b>34</b><br />
+            <!--? if($active_tab == 'topics'): ?>        
+                
+            < endif ?-->
+                <!-- for rows --->
+            </section>
+</div>    
+    </div>
+    <footer>
+    <div class="content">
+        <div class="socials-block">
+            <span class="caption">Follow Me!</span>
+            <div class="socials">
+                <a class="social instagram" href="https://www.instagram.com/shuntikov/"></a>
+                <a class="social vk" href="https://vk.com/shuntikov_foto"></a>
+            </div>
+        </div>
+    </div>
+</footer>                <script src="/js/explore.js"></script>            <script src="/js/menu.js"></script>    </body>
+
+</html>
