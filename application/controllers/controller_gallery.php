@@ -36,6 +36,10 @@ class Controller_Gallery extends Controller{
         ));
         return $view->generate('template', md5($_SERVER['REQUEST_URI']));
     }
+    function action_all(){
+        $_POST['source_dir']="img/gallery-all";
+        echo Controller_Gallery::generate_gallery();
+    }
     function action_index(){
         echo Controller_Gallery::generate_gallery();
     }
