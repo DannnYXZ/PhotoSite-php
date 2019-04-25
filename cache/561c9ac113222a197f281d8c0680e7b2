@@ -65,13 +65,13 @@
                     <h3> Wedding </h3>
                     <span> Preview: ../img/topic_previews/wedding.jpg </span> <br> <input type="file" name="preview_path"> </br>
                     <span> Source dir: </span> <input type="text" name="source_dir" value="img/wedding"> </br>
-                    <span> Tick images to be removed: </span> <br>
+                    <!--span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
                     </ul>
-                    <span> Add images: </span> <input type="file" name="add_files[]" multiple>
+                    <span> Add images: </span> <input type="file" name="add_files[]" multiple-->
                     <input type="submit" value="Apply">
                     <input type="hidden" name="topic_id" value="1">
                 </form>
@@ -79,13 +79,13 @@
                     <h3> Food </h3>
                     <span> Preview: ../img/food.jpg </span> <br> <input type="file" name="preview_path"> </br>
                     <span> Source dir: </span> <input type="text" name="source_dir" value="img/food"> </br>
-                    <span> Tick images to be removed: </span> <br>
+                    <!--span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
                     </ul>
-                    <span> Add images: </span> <input type="file" name="add_files[]" multiple>
+                    <span> Add images: </span> <input type="file" name="add_files[]" multiple-->
                     <input type="submit" value="Apply">
                     <input type="hidden" name="topic_id" value="2">
                 </form>
@@ -93,13 +93,13 @@
                     <h3> Photosessions </h3>
                     <span> Preview: ../img/session.jpg </span> <br> <input type="file" name="preview_path"> </br>
                     <span> Source dir: </span> <input type="text" name="source_dir" value="img/sessions"> </br>
-                    <span> Tick images to be removed: </span> <br>
+                    <!--span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
                     </ul>
-                    <span> Add images: </span> <input type="file" name="add_files[]" multiple>
+                    <span> Add images: </span> <input type="file" name="add_files[]" multiple-->
                     <input type="submit" value="Apply">
                     <input type="hidden" name="topic_id" value="3">
                 </form>
@@ -107,13 +107,13 @@
                     <h3> Tourism </h3>
                     <span> Preview: ../img/tourism.jpg </span> <br> <input type="file" name="preview_path"> </br>
                     <span> Source dir: </span> <input type="text" name="source_dir" value="img/tourism"> </br>
-                    <span> Tick images to be removed: </span> <br>
+                    <!--span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
                     </ul>
-                    <span> Add images: </span> <input type="file" name="add_files[]" multiple>
+                    <span> Add images: </span> <input type="file" name="add_files[]" multiple-->
                     <input type="submit" value="Apply">
                     <input type="hidden" name="topic_id" value="4">
                 </form>

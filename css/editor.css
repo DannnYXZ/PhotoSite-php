@@ -41,6 +41,7 @@
     margin-block-end: 0;
 }
 .topic {
+    min-height: 20vw;
     color: white;
     opacity: 1;
     background-position: 50% 50%;

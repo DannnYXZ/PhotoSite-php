@@ -51,7 +51,7 @@
             <a href="/editor">EDITOR</a>
         </li>
     </ul></nav>    <section class="media-topics-wrapper" id="topics" >
-                    <form class="media-div" style="background-image: url(../img/topic_previews/wedding.jpg);" id="1" method="post" action="/gallery">
+                    <form class="media-div" style="background-image: url(../img/topic_previews/about-1.jpg);" id="1" method="post" action="/gallery">
                 <a href="#" onclick="document.getElementById('1').submit();">
                     <span class="topic-caption">
                         Wedding<br/>

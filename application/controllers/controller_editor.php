@@ -34,9 +34,6 @@ class Controller_Editor extends Controller{
         self::action_index();
     }
     public function action_apply(){
-        var_dump($_POST);
-        var_dump($_FILES);
-        //exit();
         $preview = $_FILES['preview_path']['name'];
         $tmp_name = $_FILES['preview_path']['tmp_name'];
         $topic_id = $_POST['topic_id'];
