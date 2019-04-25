@@ -1,42 +1,18 @@
 <?
 class Model_Editor extends Model
 {
-    private $data;
-    function __construct()
-	{
-        $this->data['media_divs'] = array(
-            array(
-                'subclass' => 'wedding',
-                'topic_name' => 'Wedding',
-                'topic_caption' => 'Brand New Look'
-            ),
-            array(
-                'subclass' => 'food',
-                'topic_name' => 'Food',
-                'topic_caption' => 'Yummy Tasty Delicious'
-            ),
-            array(
-                'subclass' => 'session',
-                'topic_name' => 'Photosessions',
-                'topic_caption' => 'You Are a Star'
-            ),
-            array(
-                'subclass' => 'tourism',
-                'topic_name' => 'Tourism',
-                'topic_caption' => 'Explore The World'
-            )
-        );
-    }
-    
 	public function save_file($from, $to, $name)
-	{	
-		
+	{			
     }
-    public function get_topics() {
+    public function set_topic_preview($tmp_name, $name, $path, $topic_id){
+        $destination = realpath($path).'\\'.$name;
+        move_uploaded_file($tmp_name, $destination);
         $connection = mysqli_connect("localhost", "root", "toor", "testdb");
-        $query = mysqli_query($connection, "SELECT * FROM topics");
-        return mysqli_fetch_all($query);
-        //var_dump($topicdata);
+        mysqli_query($connection, "UPDATE topics SET preview_path='". "\.\./" . $path.$name . "' WHERE topic_id='" . $topic_id . "'");
+    }
+    public function set_topic_source($topic_id, $source){
+        $connection = mysqli_connect("localhost", "root", "toor", "testdb");
+        mysqli_query($connection, "UPDATE topics SET source='". $source . "' WHERE topic_id='" . $topic_id . "'");
     }
 }
 ?>

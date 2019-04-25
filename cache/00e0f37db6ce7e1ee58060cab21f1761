@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title>Contact</title>
+    <title>Gallery</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/editor.css">    <link rel="stylesheet" href="/css/footer.css">    <link rel="stylesheet" href="/css/topnav.css">    <link rel="stylesheet" href="/css/sidenav.css">    <link rel="stylesheet" href="/css/nav-btn.css">    <link rel="stylesheet" href="/css/menu.css">    <link rel="stylesheet" href="/css/sticky-footer.css">    <link rel="stylesheet" href="/css/fontawesome/css/all.css">        <script src="/js/jquery.js"></script>
+        <link rel="stylesheet" href="/css/gallery.css">    <link rel="stylesheet" href="/css/footer.css">    <link rel="stylesheet" href="/css/topnav.css">    <link rel="stylesheet" href="/css/sidenav.css">    <link rel="stylesheet" href="/css/nav-btn.css">    <link rel="stylesheet" href="/css/menu.css">    <link rel="stylesheet" href="/css/sticky-footer.css">    <link rel="stylesheet" href="/css/fontawesome/css/all.css">        <script src="/js/jquery.js"></script>    <script src="/js/fill-gallery.js"></script>
 </head>
 
 <body>
@@ -52,17 +52,8 @@
             <li>
             <a href="/editor">EDITOR</a>
         </li>
-    </ul></nav>        <div class="editor">
-    <nav class="side-panel">
-        <a class="side-panel__link" href="/editor/topics">
-            <div class="side-panel__tab">
-                <span class="side-panel__tab-name">Topics</span>
-            </div>
-        </a>
-    </nav>
-    <section class="main-panel">
-            </section>
-</div>    
+    </ul></nav>        <main class="gallery">
+            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-1.jpg>                    <img src=/img/food/img-1.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-2.jpg>                    <img src=/img/food/img-2.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-3.jpg>                    <img src=/img/food/img-3.jpg>                </a>                    </div>            <div class="gallery-col">                            <a class="gallery-pic" href=img/food/img-4.jpg>                    <img src=/img/food/img-4.jpg>                </a>                    </div>    </main>    
     </div>
     <footer>
     <div class="content">

@@ -11,23 +11,24 @@
 <body>
     <? include($TPL_PATH.'topnav.php') ?>
     <? include($TPL_PATH.'sidenav.php') ?>
-    <section class="media-topics-wrapper" id="topics">
+    <section class="media-topics-wrapper" id="topics" >
         <? foreach($media_divs as $media_div): ?>
-            <div class="media-div <?=$media_div['gallery_ref']?>">
-                <a href="gallery/<?=$media_div['gallery_ref']?>">
+            <form class="media-div" style="background-image: url(<?=$media_div[5]?>);" id="<?=$media_div[0]?>" method="post" action="/gallery">
+                <a href="#" onclick="document.getElementById('<?=$media_div[0]?>').submit();">
                     <span class="topic-caption">
-                        <?=$media_div['topic_name']?><br/>
-                        <span class="topic-caption-sub"><?=$media_div['topic_caption']?></span>
+                        <?=$media_div[1]?><br/>
+                        <span class="topic-caption-sub"><?=$media_div[2]?></span>
                     </span>
                 </a>
-            </div>
+                <input type="hidden" name="source_dir" value="<?=$media_div[3]?>">
+            </form>
         <? endforeach; ?>
     </section>
     <section class="topic-captions-panel">
         <? foreach($media_divs as $media_div): ?>
             <span class="topic-caption">
-                <?=$media_div['topic_name'];?><br />
-                <span class="topic-caption-sub"><?=$media_div['topic_caption']?></span>
+                <?=$media_div[1];?><br />
+                <span class="topic-caption-sub"><?=$media_div[2]?></span>
             </span>
         <? endforeach; ?>
     </section>

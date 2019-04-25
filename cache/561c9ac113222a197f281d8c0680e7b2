@@ -54,94 +54,68 @@
         </li>
     </ul></nav>        <div class="editor">
     <nav class="side-panel">
-        <a class="side-panel__link" href="editor/topics">
+        <a class="side-panel__link" href="/editor/topics">
             <div class="side-panel__tab">
                 <span class="side-panel__tab-name">Topics</span>
             </div>
         </a>
     </nav>
     <section class="main-panel">
-                    <h1>Topics</h1>
-            <hr>
-                            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data">
+                                    <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data" style="background-image: url(../img/topic_previews/wedding.jpg);">
                     <h3> Wedding </h3>
-                    <span> Preview: ../img/wedding.jpg </span> <input type="file"> </br>
-                    <span> Source dir: </span> <input type="text" name="source-dir" value="img/wedding"> </br>
+                    <span> Preview: ../img/topic_previews/wedding.jpg </span> <br> <input type="file" name="preview_path"> </br>
+                    <span> Source dir: </span> <input type="text" name="source_dir" value="img/wedding"> </br>
                     <span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
-                        <li><input name="delete_file4" type="checkbox">KEK </li>
-                        <li><input name="delete_file5" type="checkbox">KEK </li>
-                        <li><input name="delete_file6" type="checkbox">KEK </li>
-                        <li><input name="delete_file7" type="checkbox">KEK </li>
-                        <li><input name="delete_file8" type="checkbox">KEK </li>
-                        <li><input name="delete_file9" type="checkbox">KEK </li>
-                        <li><input name="delete_file0" type="checkbox">KEK </li>
                     </ul>
                     <span> Add images: </span> <input type="file" name="add_files[]" multiple>
                     <input type="submit" value="Apply">
+                    <input type="hidden" name="topic_id" value="1">
                 </form>
-                            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data">
+                            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data" style="background-image: url(../img/food.jpg);">
                     <h3> Food </h3>
-                    <span> Preview: (../img/food.jpg </span> <input type="file"> </br>
-                    <span> Source dir: </span> <input type="text" name="source-dir" value="img/food"> </br>
+                    <span> Preview: ../img/food.jpg </span> <br> <input type="file" name="preview_path"> </br>
+                    <span> Source dir: </span> <input type="text" name="source_dir" value="img/food"> </br>
                     <span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
-                        <li><input name="delete_file4" type="checkbox">KEK </li>
-                        <li><input name="delete_file5" type="checkbox">KEK </li>
-                        <li><input name="delete_file6" type="checkbox">KEK </li>
-                        <li><input name="delete_file7" type="checkbox">KEK </li>
-                        <li><input name="delete_file8" type="checkbox">KEK </li>
-                        <li><input name="delete_file9" type="checkbox">KEK </li>
-                        <li><input name="delete_file0" type="checkbox">KEK </li>
                     </ul>
                     <span> Add images: </span> <input type="file" name="add_files[]" multiple>
                     <input type="submit" value="Apply">
+                    <input type="hidden" name="topic_id" value="2">
                 </form>
-                            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data">
+                            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data" style="background-image: url(../img/session.jpg);">
                     <h3> Photosessions </h3>
-                    <span> Preview: ../img/session.jpg </span> <input type="file"> </br>
-                    <span> Source dir: </span> <input type="text" name="source-dir" value="img/sessions"> </br>
+                    <span> Preview: ../img/session.jpg </span> <br> <input type="file" name="preview_path"> </br>
+                    <span> Source dir: </span> <input type="text" name="source_dir" value="img/sessions"> </br>
                     <span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
-                        <li><input name="delete_file4" type="checkbox">KEK </li>
-                        <li><input name="delete_file5" type="checkbox">KEK </li>
-                        <li><input name="delete_file6" type="checkbox">KEK </li>
-                        <li><input name="delete_file7" type="checkbox">KEK </li>
-                        <li><input name="delete_file8" type="checkbox">KEK </li>
-                        <li><input name="delete_file9" type="checkbox">KEK </li>
-                        <li><input name="delete_file0" type="checkbox">KEK </li>
                     </ul>
                     <span> Add images: </span> <input type="file" name="add_files[]" multiple>
                     <input type="submit" value="Apply">
+                    <input type="hidden" name="topic_id" value="3">
                 </form>
-                            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data">
+                            <form class="topic topic_marg" method="post" action="/editor/apply" enctype="multipart/form-data" style="background-image: url(../img/tourism.jpg);">
                     <h3> Tourism </h3>
-                    <span> Preview: ../img/tourism.jpg </span> <input type="file"> </br>
-                    <span> Source dir: </span> <input type="text" name="source-dir" value="img/tourism"> </br>
+                    <span> Preview: ../img/tourism.jpg </span> <br> <input type="file" name="preview_path"> </br>
+                    <span> Source dir: </span> <input type="text" name="source_dir" value="img/tourism"> </br>
                     <span> Tick images to be removed: </span> <br>
                     <ul class="files">
                         <li><input name="file_name1" type="checkbox">f1 </li>
                         <li><input name="file_name2" type="checkbox">f2</li>
                         <li><input name="delete_file[]" type="checkbox">KEK </li>
-                        <li><input name="delete_file4" type="checkbox">KEK </li>
-                        <li><input name="delete_file5" type="checkbox">KEK </li>
-                        <li><input name="delete_file6" type="checkbox">KEK </li>
-                        <li><input name="delete_file7" type="checkbox">KEK </li>
-                        <li><input name="delete_file8" type="checkbox">KEK </li>
-                        <li><input name="delete_file9" type="checkbox">KEK </li>
-                        <li><input name="delete_file0" type="checkbox">KEK </li>
                     </ul>
                     <span> Add images: </span> <input type="file" name="add_files[]" multiple>
                     <input type="submit" value="Apply">
+                    <input type="hidden" name="topic_id" value="4">
                 </form>
                         </section>
 </div>    

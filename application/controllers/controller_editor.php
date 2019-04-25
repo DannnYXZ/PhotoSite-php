@@ -28,12 +28,23 @@ class Controller_Editor extends Controller{
         echo $this->view->generate('template', md5($_SERVER['REQUEST_URI']));
     }
     function action_topics(){
-        $this->view->set('topics', $this->model->get_topics());
+        $topics_model = new Model_Topics();
+        $this->view->set('topics', $topics_model->get_topics());
+        $this->view->set('active_tab', 'topics');
         self::action_index();
     }
     public function action_apply(){
         var_dump($_POST);
-        //header('location: /editor');
+        var_dump($_FILES);
+        //exit();
+        $preview = $_FILES['preview_path']['name'];
+        $tmp_name = $_FILES['preview_path']['tmp_name'];
+        $topic_id = $_POST['topic_id'];
+        $source = $_POST['source_dir'];
+        if($preview)
+            $this->model->set_topic_preview($tmp_name, $preview, 'img/topic_previews/', $topic_id);
+        $this->model->set_topic_source($topic_id, $source);
+        header('location: ' . $_SERVER['HTTP_REFERER']);
     }
 }
 ?>

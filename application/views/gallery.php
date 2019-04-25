@@ -1,4 +1,6 @@
 <main class="gallery">
+    <? if(isset($img_list)): ?>
+
     <? for($x = 0; $x < 4; $x++): ?>
         <?= '<div class="gallery-col">' ?>
             <? for($i = $x; $i < count($img_list); $i += 4): ?>
@@ -8,4 +10,6 @@
             <? endfor ?>
         <?= '</div>' ?>
     <? endfor ?>
+    
+    <? endif ?>
 </main>

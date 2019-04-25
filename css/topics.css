@@ -21,18 +21,6 @@ body {
 .media-div:hover {
     opacity: 1;
 }
-.wedding {
-    background-image: url(../img/wedding.jpg);
-}
-.food {
-    background-image: url(../img/food.jpg);
-}
-.session {
-    background-image: url(../img/session.jpg);
-}
-.tourism {
-    background-image: url(../img/tourism.jpg);
-}
 .media-div img {
     object-fit: cover;
     width: 100%;

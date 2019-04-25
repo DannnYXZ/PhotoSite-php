@@ -50,39 +50,43 @@
             <li>
             <a href="/editor">EDITOR</a>
         </li>
-    </ul></nav>    <section class="media-topics-wrapper" id="topics">
-                    <div class="media-div wedding">
-                <a href="gallery/wedding">
+    </ul></nav>    <section class="media-topics-wrapper" id="topics" >
+                    <form class="media-div" style="background-image: url(../img/topic_previews/wedding.jpg);" id="1" method="post" action="/gallery">
+                <a href="#" onclick="document.getElementById('1').submit();">
                     <span class="topic-caption">
                         Wedding<br/>
                         <span class="topic-caption-sub">Brand New Look</span>
                     </span>
                 </a>
-            </div>
-                    <div class="media-div food">
-                <a href="gallery/food">
+                <input type="hidden" name="source_dir" value="img/wedding">
+            </form>
+                    <form class="media-div" style="background-image: url(../img/food.jpg);" id="2" method="post" action="/gallery">
+                <a href="#" onclick="document.getElementById('2').submit();">
                     <span class="topic-caption">
                         Food<br/>
                         <span class="topic-caption-sub">Yummy Tasty Delicious</span>
                     </span>
                 </a>
-            </div>
-                    <div class="media-div session">
-                <a href="gallery/session">
+                <input type="hidden" name="source_dir" value="img/food">
+            </form>
+                    <form class="media-div" style="background-image: url(../img/session.jpg);" id="3" method="post" action="/gallery">
+                <a href="#" onclick="document.getElementById('3').submit();">
                     <span class="topic-caption">
                         Photosessions<br/>
                         <span class="topic-caption-sub">You Are a Star</span>
                     </span>
                 </a>
-            </div>
-                    <div class="media-div tourism">
-                <a href="gallery/tourism">
+                <input type="hidden" name="source_dir" value="img/sessions">
+            </form>
+                    <form class="media-div" style="background-image: url(../img/tourism.jpg);" id="4" method="post" action="/gallery">
+                <a href="#" onclick="document.getElementById('4').submit();">
                     <span class="topic-caption">
                         Tourism<br/>
                         <span class="topic-caption-sub">Explore The World</span>
                     </span>
                 </a>
-            </div>
+                <input type="hidden" name="source_dir" value="img/tourism">
+            </form>
             </section>
     <section class="topic-captions-panel">
                     <span class="topic-caption">
