@@ -1,6 +1,6 @@
 <ul class="nav-btns">
     <li>
-        <a href="/gallery/all">GALLERY</a>
+        <a href="/gallery">GALLERY</a>
     </li>
     <li>
         <a href="/topics#topics">TOPICS</a>

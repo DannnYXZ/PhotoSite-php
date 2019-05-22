@@ -33,14 +33,31 @@ class Controller_Editor extends Controller{
         $this->view->set('active_tab', 'topics');
         self::action_index();
     }
-    public function action_apply(){
-        $preview = $_FILES['preview_path']['name'];
+    public function action_update_topic(){
+        var_dump($_POST);
+        //exit();
+        $name = $_POST['topic_name'];
+        $caption = $_POST['topic_caption'];
         $tmp_name = $_FILES['preview_path']['tmp_name'];
         $topic_id = $_POST['topic_id'];
         $source = $_POST['source_dir'];
+        $preview = $_FILES['preview_path']['name'];
+        if(!isset($preview))
+            $preview = $_POST['topic_preview_path'];
         if($preview)
-            $this->model->set_topic_preview($tmp_name, $preview, 'img/topic_previews/', $topic_id);
-        $this->model->set_topic_source($topic_id, $source);
+            $this->model->set_topic_preview($topic_id, $tmp_name, $preview, 'img/topic_previews/');
+        $this->model->set_topic_data($topic_id, $name, $caption, $source);
+        header('location: ' . $_SERVER['HTTP_REFERER']);
+    }
+    public function action_add_topic(){
+        $this->model->add_topic(NULL, NULL, NULL, NULL);
+        
+        header('location: ' . $_SERVER['HTTP_REFERER']);
+    }
+    public function action_remove_topic(){
+        var_dump($_POST);
+        $this->model->remove_topic($_POST['topic_id']);
+        //exit();
         header('location: ' . $_SERVER['HTTP_REFERER']);
     }
 }

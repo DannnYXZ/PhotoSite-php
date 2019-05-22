@@ -19,7 +19,6 @@
                 minlength="4"
                 maxlength="32"
                 required="required"
-                pattern="[A-Za-z0-9]{4,32}"
                 placeholder="Password">
             <button name="submit" type="submit" formmethod="post">REGISTER</button>
         </form>

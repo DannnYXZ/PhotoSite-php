@@ -24,11 +24,8 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
-            <li>
-            <a href="/editor">EDITOR</a>
-        </li>
     </ul>            <div class="user-info">
-            admin            <a href="/auth/logout">
+            DannnY            <a href="/auth/logout">
                 <button class="button">LOGOUT</button>
             </a>
         </div>
@@ -49,9 +46,6 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
-            <li>
-            <a href="/editor">EDITOR</a>
-        </li>
     </ul></nav>        <main class="about-me">
   <div>
     <article class="intro-text">

@@ -22,8 +22,6 @@ class Controller_Topics extends Controller{
         $this->view->set('head_scripts', array(
             'jquery.js'
         ));
-        $data = $this->model->get_data('media_divs');
-        $this->view->set('media_divs', $data);
         $this->view->set('media_divs', $this->model->get_topics());
         $this->view->set('content', 'topics.php');
         $this->view->set('foot_scripts', array(

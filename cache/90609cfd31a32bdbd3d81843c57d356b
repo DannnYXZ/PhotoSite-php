@@ -25,14 +25,9 @@
         <a href="/contact">CONTACT</a>
     </li>
             <li>
-            <a href="/editor">EDITOR</a>
+            <a href="/login">LOGIN</a>
         </li>
-    </ul>            <div class="user-info">
-            admin            <a href="/auth/logout">
-                <button class="button">LOGOUT</button>
-            </a>
-        </div>
-    </nav>        <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
+    </ul>    </nav>        <nav class="menu-btn" id="main-menu" onclick="clickMenu()">
     <i class="fas fa-bars"></i>
 </nav>
 <nav class="sidenav" id="side-nav">
@@ -50,7 +45,7 @@
         <a href="/contact">CONTACT</a>
     </li>
             <li>
-            <a href="/editor">EDITOR</a>
+            <a href="/login">LOGIN</a>
         </li>
     </ul></nav>        <main class="card">
     <div class="column">

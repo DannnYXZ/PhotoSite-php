@@ -13,7 +13,7 @@
     <? include($TPL_PATH.'sidenav.php') ?>
     <section class="media-topics-wrapper" id="topics" >
         <? foreach($media_divs as $media_div): ?>
-            <form class="media-div" style="background-image: url(<?=$media_div[5]?>);" id="<?=$media_div[0]?>" method="post" action="/gallery">
+            <form class="media-div" style="background-image: url(<?=$media_div[4]?>);" id="<?=$media_div[0]?>" method="post" action="/gallery">
                 <a href="#" onclick="document.getElementById('<?=$media_div[0]?>').submit();">
                     <span class="topic-caption">
                         <?=$media_div[1]?><br/>
