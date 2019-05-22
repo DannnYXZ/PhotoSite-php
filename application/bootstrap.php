@@ -14,8 +14,9 @@ spl_autoload_register ( function ($class) {
     } 
 });
 require_once 'models/Model_Topics.php';
-define('CACHING', false);
-define('CACHE_TIME', 300);
-define('ADMIN_NAME', 'admin');    
+define('CACHING', true);
+define('CACHE_TIME', 10);
+define('ADMIN_NAME', 'admin');
+$GLOBALS['USER_NAME'] = '';
 Route::start();
 ?>

@@ -25,7 +25,7 @@ class Controller_Editor extends Controller{
             'explore.js',
             'menu.js'
         ));
-        echo $this->view->generate('template', md5($_SERVER['REQUEST_URI']));
+        echo $this->view->generate('template', false);
     }
     function action_topics(){
         $topics_model = new Model_Topics();

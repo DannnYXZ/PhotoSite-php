@@ -21,7 +21,7 @@ class Controller_About extends Controller{
             'explore.js',
             'menu.js'
         ));
-        echo $this->view->generate('template', md5($_SERVER['REQUEST_URI']));
+        echo $this->view->generate('template');
 	}
 }
 ?>

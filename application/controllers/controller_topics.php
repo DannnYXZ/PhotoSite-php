@@ -28,7 +28,7 @@ class Controller_Topics extends Controller{
             'explore.js',
             'menu.js'
         ));
-        echo $this->view->generate('topics', md5($_SERVER['REQUEST_URI']));
+        echo $this->view->generate('topics');
     }
 }
 ?>

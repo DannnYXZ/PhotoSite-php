@@ -11,11 +11,11 @@
     <li>
         <a href="/contact">CONTACT</a>
     </li>
-    <? if(!defined('USER_NAME')) :?>
+    <? if($GLOBALS['USER_NAME']=='') :?>
         <li>
             <a href="/login">LOGIN</a>
         </li>
-    <? elseif(USER_NAME == ADMIN_NAME): ?>
+    <? elseif($GLOBALS['USER_NAME'] == ADMIN_NAME): ?>
         <li>
             <a href="/editor">EDITOR</a>
         </li>

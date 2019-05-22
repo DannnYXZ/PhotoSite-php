@@ -25,11 +25,9 @@ class Controller_Gallery extends Controller{
             'fill-gallery.js'
         ));
         $view->set('content', 'gallery.php');
-        if(!isset($_POST['source_dir']))
-            $_POST['source_dir'] = "/gallery-all";
-            
-        
-        $img_src = 'img'.$_POST['source_dir'];
+        if(!isset($_GET['source_dir']))
+            $_GET['source_dir'] = "gallery-all";
+        $img_src = 'img/'.$_GET['source_dir'];
         if(file_exists($img_src)){
             $img_list = $this->model->list_files($img_src);
             $view->set('img_list', $img_list);
@@ -38,14 +36,14 @@ class Controller_Gallery extends Controller{
                 'explore.js',
                 'menu.js'
         ));
-        return $view->generate('template', md5($_SERVER['REQUEST_URI']));
-    }
-    function action_all(){
-        $_POST['source_dir']="img/gallery-all";
-        echo Controller_Gallery::generate_gallery();
+        return $view->generate('template', false);
     }
     function action_index(){
         echo Controller_Gallery::generate_gallery();
+    }
+    function action_show($src){
+        echo $this->generate_gallery();
+        //$_POST['source_dir'] = $src['source_dir'];
     }
 }
 ?>

@@ -1,5 +1,4 @@
 <main class="card">
-    <h2>LOGIN</h2>
     <form method="POST" class="inputs" action="/auth/login">
         <? if(isset($ERR_MSG)) : ?>
             <?= '<span class="notify">' . $ERR_MSG . '</span>' ?>

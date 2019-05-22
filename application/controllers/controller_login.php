@@ -24,7 +24,12 @@ class Controller_Login extends Controller {
         if(isset($_SESSION['ERR_MSG']))
             $this->view->set('ERR_MSG', $_SESSION['ERR_MSG']);
         $_SESSION['ERR_MSG'] = NULL;
-        echo $this->view->generate('template', md5($_SERVER['REQUEST_URI']));
+        echo $this->view->generate('template');
+    }
+
+    function action_wrong_passwd(){
+        $_SESSION['ERR_MSG'] = 'Wrong Login/Password...';
+        $this->action_index();
     }
 }
 ?>

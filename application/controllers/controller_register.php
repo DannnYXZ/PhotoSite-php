@@ -24,7 +24,12 @@ class Controller_Register extends Controller {
         if(isset($_SESSION['ERR_MSG']))
             $this->view->set('ERR_MSG', $_SESSION['ERR_MSG']);
         $_SESSION['ERR_MSG'] = NULL;
-        echo $this->view->generate('template', md5($_SERVER['REQUEST_URI']));
+        echo $this->view->generate('template');
+    }
+
+    function action_user_exists(){
+        $_SESSION['ERR_MSG'] = 'Such user already exists...';
+        $this->action_index();
     }
 }
 ?>
